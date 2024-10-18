@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.jpeg">
+    <title>People Store</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ecommerce Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active" data-category="all">All</a></li>
+                    <li><a href="#" data-category="electronics">Electronics</a></li>
+                    <li><a href="#" data-category="clothing">Clothing</a></li>
+                    <li><a href="#" data-category="accessories">Accessories</a></li>
+                </ul>
+            </nav>
+            <div class="filter">
+                <input type="number" id="minPrice" placeholder="Min Price" >
+                <input type="number" id="maxPrice" placeholder="Max Price" >
+                <button id="filterButton">Filter</button>
+                <button><i class="fa fa-shopping-cart"> Cart</i></button>
+                
+
+            </div>
+
+        </div>
+    </header>
+    <main id="product-list" class="container">
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
