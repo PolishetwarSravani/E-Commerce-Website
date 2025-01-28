@@ -3,6 +3,7 @@
 # Project Structure:
 
 - index.html : This file contains the structure of the website, including the navigation bar, product list, and filtering options.
+- cart.html : This file contains products that are added to the cart and sum of their costs.
 - script.js : Contains the JavaScript logic for dynamic product display, filtering based on category and price, and handling user interactions such as adding products to the cart.
 - styles.css : Defines the styling of the website, including layout, colors, and responsive design.
 - images : This folder contains all the pictures of products and the icon of e-commerce website.
