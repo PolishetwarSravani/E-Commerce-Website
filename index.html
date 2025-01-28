@@ -35,6 +35,11 @@
     <main id="product-list" class="container">
         
     </main>
+    <div id="cart-container" style="display: none; position: fixed; top: 20%; right: 10%; background: white; padding: 20px; border: 1px solid #ccc; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); z-index: 1000;">
+        <h2>Cart</h2>
+        <div id="cart-items"></div>
+        <button onclick="document.getElementById('cart-container').style.display='none'">Close</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
