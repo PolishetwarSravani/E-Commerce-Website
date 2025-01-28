@@ -92,5 +92,31 @@ document.querySelectorAll('header nav ul li a').forEach(link => {
     });
 });
 
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+function addToCart(productId) {
+    const product = products.find(p => p.id === productId);
+    
+    // Check if product is already in cart
+    const existingProduct = cart.find(p => p.id === productId);
+    
+    if (existingProduct) {
+        existingProduct.quantity++;
+    } else {
+        cart.push({ ...product, quantity: 1 });
+    }
+    
+    localStorage.setItem('cart', JSON.stringify(cart));
+    alert(`${product.name} added to cart`);
+}
+
+// Function to open the cart page in a new window
+function openCartPage() {
+    window.open('cart.html', '_blank'); // Open the cart.html page in a new window
+}
+
+// Attach event listener for Cart button
+document.querySelector('.fa-shopping-cart').parentElement.addEventListener('click', openCartPage);
+
 // Initial display
 displayProducts(products);
